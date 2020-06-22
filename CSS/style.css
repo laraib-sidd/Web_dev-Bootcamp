@@ -1,0 +1,55 @@
+/* Selector{
+    Property: value
+} */
+/* Cascading means overwriting the next property. */
+body{
+    background-color: blanchedalmond;
+    
+}
+
+*{
+    color: black;
+}
+
+h2{
+    color: red;
+    text-align:center;
+    text-transform: capitalize;
+    border: 5px dashed #F75F8D;
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    animation: both;
+    cursor: pointer;
+}
+
+li{
+    list-style: none;
+    display: inline-block;
+}
+
+p{
+    color: brown;
+}
+
+.webtext {
+    color: green;
+    border: 5px dashed #F75F8D
+
+}
+.active{
+    color: blue;
+}
+
+#div1{
+    color: cyan ;
+    background-color:palegoldenrod;
+}
+h2 + p{
+    text-decoration: underline;
+}
+p{
+    text-decoration: underline;
+    font-style: italic;
+    font-weight: bolder;
+    font-size: 120%;
+    font-family: "Cambria", 'Cochin', 'Georgia', Times, 'Times New Roman', serif;
+}

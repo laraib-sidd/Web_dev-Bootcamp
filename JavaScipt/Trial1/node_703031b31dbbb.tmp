@@ -1,0 +1,6 @@
+var database =[
+{
+    username : "laraib",
+    password : "secret"
+}
+];
