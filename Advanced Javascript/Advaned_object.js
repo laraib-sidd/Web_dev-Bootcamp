@@ -13,3 +13,24 @@ const obj = {
 }
 
 // instantiation
+class Player{
+    constructor(name,type){
+        this.name = name;
+        this.type = type;
+    }
+    introduce() {
+        console.log(`Hi I am ${this.name}, I am a ${this.type} wizard`);
+    }
+}
+
+class Wizard extends Player{
+    constructor(name,type){
+    super(name,type)
+    }
+    play(){
+        console.log(`WEEEEEEEEEEEEEEE I am a ${this.type}`);
+    }
+}
+
+const wiz1 = new Wizard("Sham","Badass");
+const wiz2 = new Wizard("Shaun","Goodass");
