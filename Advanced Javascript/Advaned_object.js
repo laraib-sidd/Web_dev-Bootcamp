@@ -36,53 +36,36 @@ const wiz1 = new Wizard("Sham","Badass");
 const wiz2 = new Wizard("Shaun","Goodass");
 
 // Exercise
-// Complete the below questions using this array:
-const array = [
-    {
-      username: "john",
-      team: "red",
-      score: 5,
-      items: ["ball", "book", "pen"]
-    },
-    {
-      username: "becky",
-      team: "blue",
-      score: 10,
-      items: ["tape", "backpack", "pen"]
-    },
-    {
-      username: "susy",
-      team: "red",
-      score: 55,
-      items: ["ball", "eraser", "pen"]
-    },
-    {
-      username: "tyson",
-      team: "green",
-      score: 1,
-      items: ["book", "pen"]
-    },
+//Evaluate these:
+//#1
+[2] === [2] // false
+{} === {} // false
 
-  ];
-
-  //Create an array using forEach that has all the usernames with a "!" to each of the usernames
+//#2 what is the value of property a for each object.
+const object1 = { a: 5 }; //4
+const object2 = object1; //4
+const object3 = object2; //4
+const object4 = { a: 5}; //5
+object1.a = 4; //4
 
 
-  //Create an array using map that has all the usernames with a "? to each of the usernames
+//#3 create two classes: an Animal class and a Mamal class.
+class Animal{
+    constructor(name,type,color){
+        this.name = name;
+        this.type = type;
+        this.color = color;
+    }
+}
 
+class Mammal extends Animal{
+    constructor(name,type,color){
+        super(name,type,color);
+    }
+    sound(){
+        console.log(`Moo I am ${this.name}, I am a ${this.type}, I am of ${this.color} color.`);
+    }
+}
 
-  //Filter the array to only include users who are on team: red
-
-
-  //Find out the total score of all users using reduce
-
-  // (1), what is the value of i?
-  // (2), Make this map function pure:
-  const arrayNum = [1, 2, 4, 5, 8, 9];
-  const newArray = arrayNum.map((num, i) => {
-      console.log(num, i);
-      alert(num);
-      return num * 2;
-  })
-
-  //BONUS: create a new list with all user information, but add "!" to the end of each items they own.
+// create a cow that accepts a name, type and color and has a sound method that moo's her name, type and color.
+let cow = new Mammal('dolly','cow','Black');
