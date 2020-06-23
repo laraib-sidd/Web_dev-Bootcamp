@@ -113,3 +113,5 @@ const compose = (f,g) => (a) => f(g(a));
 
 const sum = (num) => num + 1;
 compose(sum,sum)(5);
+
+// Avoiding side Effects, and functional purity.
