@@ -107,3 +107,9 @@ new_func();
 // Currying
 const multiply = (a,b) => a * b;
 const curried_mulitply = (a) => (b) => a*b;
+
+// compose
+const compose = (f,g) => (a) => f(g(a));
+
+const sum = (num) => num + 1;
+compose(sum,sum)(5);
