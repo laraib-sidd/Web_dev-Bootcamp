@@ -74,3 +74,18 @@ const greeting = `Hello ${name} you seem to be doing good`;
 function greet(name = 'laraib', age = 21){
     return `Hello ${name} you seem to be of ${age}`;
 }
+
+// Symbol
+
+let sym1 = Symbol();
+let sym2 = Symbol('fooo');
+let sym3 = Symbol('foo');
+
+// arrow function
+// old way
+function add(a,b) {
+    return a+b;
+}
+
+// new way
+const add = (a,b) => a+b;
