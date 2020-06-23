@@ -69,3 +69,8 @@ const greeting = "hello" + name + "you seem to be doing good";
 
 // New Way
 const greeting = `Hello ${name} you seem to be doing good`;
+
+// Defautl Arguments
+function greet(name = 'laraib', age = 21){
+    return `Hello ${name} you seem to be of ${age}`;
+}
