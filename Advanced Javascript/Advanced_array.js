@@ -64,12 +64,21 @@ array.forEach(user => {
 console.log(newArray);
 
   //Create an array using map that has all the usernames with a "? to each of the usernames
-let map_arr = array.map(user => `${user}?`);
+let map_arr = array.map(user => {
+    let {username} = user;
+    return username = username + "?";
+})
 
   //Filter the array to only include users who are on team: red
-
+let filter_map = array.filter(user =>{
+    return user.team === "red";
+})
 
   //Find out the total score of all users using reduce
+let total_score = array.reduce((accumulator,user) =>{
+    return accumulator + user.score;
+},0)
+
 
   // (1), what is the value of i?
   // (2), Make this map function pure:
@@ -80,4 +89,16 @@ let map_arr = array.map(user => `${user}?`);
       return num * 2;
   })
 
+// (1) Index of the array.active
+// (2)
+const new_arr = arrayNum.map((num)=>{
+    return num *2;
+})
+
   //BONUS: create a new list with all user information, but add "!" to the end of each items they own.
+const answer = array.map(user => {
+    user.items = user.items.map(item =>{
+        return item + "!";
+    });
+    return user;
+})
