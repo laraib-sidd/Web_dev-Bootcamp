@@ -22,6 +22,11 @@ body{
       -30px 20px 40px dimgrey;
   }
 
+h1:hover{
+  cursor: pointer;
+}
+
+
   .done {
     text-decoration: line-through;
   }
