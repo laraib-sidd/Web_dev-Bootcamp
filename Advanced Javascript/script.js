@@ -30,7 +30,7 @@ function move(params) {
 // ES 5
 // let , const
 
-const player = "bobby";
+const player = "bobby"; //It creates a constant variable that cannot be changed.
 let experience = 100;
 let wizard = false;
 
@@ -40,3 +40,16 @@ if (experience>90){
 }
 
 console.log('outside', wizard);
+
+// Destruturing
+const obj = {
+    player : 'bobbby' ,
+    experience : 100 ,
+    wizard : true
+}
+const player = obj.player;
+const experience = obj.experience;
+let wizard = obj.wizard;
+// Now with destruturing
+const {player, experience} = obj;
+let {wizard} = obj;
