@@ -20,7 +20,7 @@ var lastName = person.lastName;
 var age = person.age;
 var eyeColor = person.eyeColor;
 
-let {firstName,lastName,age,eyeColor} = person;
+const {firstName,lastName,age,eyeColor} = person;
 
 // Object properties
 var a = 'test';
@@ -77,4 +77,5 @@ const whereAmI = (username,location) => {
     }
 }
 
+// Arrow and terenary method.
 const whereAmI = (username,location) => username&&location ? "I am not lost" : "I am totally lost";
