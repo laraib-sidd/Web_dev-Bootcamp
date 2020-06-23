@@ -19,3 +19,7 @@ const filter_arr = arr.filter(num => {
 const filter_array = arr.filter(num => num > 5);
 
 // reduce
+
+const reduce_array = arr.reduce((accumulator, num) => {
+    return accumulator + num
+}, 0)
