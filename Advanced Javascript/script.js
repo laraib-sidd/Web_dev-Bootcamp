@@ -59,7 +59,7 @@ let {wizard} = obj;
 const name = "john snow";
 const obj = {
     [name] : "hello",
-    ['ray' + 'smith'] : "hihi" 
+    ['ray' + 'smith'] : "hihi"
 }
 
 // Template Strings
@@ -89,3 +89,5 @@ function add(a,b) {
 
 // new way
 const add = (a,b) => a+b;
+
+// Closures
