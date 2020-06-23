@@ -90,4 +90,20 @@ function add(a,b) {
 // new way
 const add = (a,b) => a+b;
 
-// Closures
+// Closures - a function ran. The function executed.
+// It's never going to be executed but it's goingt to remember
+// that there are refrences to those variables.
+
+const first = () => {
+    const greet = "hi";
+    const second = () => {
+    alert(greet);
+    }
+}
+
+const new_func = first();
+new_func();
+
+// Currying
+const multiply = (a,b) => a * b;
+const curried_mulitply = (a) => (b) => a*b;
