@@ -50,6 +50,22 @@ const obj = {
 const player = obj.player;
 const experience = obj.experience;
 let wizard = obj.wizard;
+
 // Now with destruturing
 const {player, experience} = obj;
 let {wizard} = obj;
+
+// object properties
+const name = "john snow";
+const obj = {
+    [name] : "hello",
+    ['ray' + 'smith'] : "hihi" 
+}
+
+// Template Strings
+
+// Old way
+const greeting = "hello" + name + "you seem to be doing good";
+
+// New Way
+const greeting = `Hello ${name} you seem to be doing good`;
