@@ -92,12 +92,22 @@ turtle = turtle.trim().padEnd(9, '=');
 
 // #3) Get the below object to go from:
 let obj = {
-  my: 'name',
-  is: 'Rudolf',
-  the: 'raindeer'
+    my: 'name',
+    is: 'Rudolf',
+    the: 'raindeer'
 }
 // to this:
 'my name is Rudolf the raindeer'
 
-Object.entries(obj).map(item => `${item[0]} ${item[1]}`).join(' ')
+Object.entries(obj).map(item => `${item[0]} ${item[1]}`).join(' ');
+// other way
+Object.entries(obj).map(item => item.join(' ')).join(' ');
 
+// ES9
+const arr = [1,[2,3],4,5]
+arr.flat();
+// flat - this function makes a multidimensional array single
+// dimensional.
+// flat takes a parameter to define till how much depth to
+// flaten.
+// It also removes the empty entries in the array.
