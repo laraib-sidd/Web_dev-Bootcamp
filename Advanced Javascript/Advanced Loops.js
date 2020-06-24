@@ -1,4 +1,9 @@
 const basket = ['apples','oranges','grapes'];
+const bas = {
+    apples :4,
+    oragnes : 3,
+    grapes : 4
+}
 
 // (1) for
 for (let i =0;i<basket.length;i++){
@@ -15,3 +20,8 @@ for (item of basket){
 }
 
 // 4 for in
+// It allows us to see object properties.
+// It works with objects;
+for (item in bas){
+    console.log(item);
+}
