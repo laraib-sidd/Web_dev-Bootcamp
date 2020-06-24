@@ -104,3 +104,20 @@ setTimeout(() => console.log('2'));
 console.log('3');
 
 // Modules:
+// IIFE
+// js1 first file loaded
+var myApp = {};
+(function(){
+    myapp.add = function(a,b){
+        return a+b;
+    }
+})();
+
+// CommonJS + Browserify
+// js1
+module.exports = function add(a,b){
+    return a+b;
+}
+
+// js2
+var add = require("./js1");
