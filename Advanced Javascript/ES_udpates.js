@@ -129,3 +129,10 @@ user = [['commanderTom',24],['zeklander',43],['tracy',65]];
 Object.fromEntries(user);
 // It converts a two dimensional array into a object.
 
+// exception handling
+try{
+    4+5;
+}
+catch{
+    console.log('You are so wrong');
+}
