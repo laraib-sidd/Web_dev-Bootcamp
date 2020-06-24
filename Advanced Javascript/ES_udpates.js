@@ -121,3 +121,11 @@ const jurassic_park = arr.flatmap(num => num + 'a')
 // beginning of the string.
 // trimEnd() - it removes the empty white spaces from the
 // ending of the string.
+// trim () = it removes empty white spaces from both
+// the ends.
+
+// fromEntries
+user = [['commanderTom',24],['zeklander',43],['tracy',65]];
+Object.fromEntries(user);
+// It converts a two dimensional array into a object.
+
