@@ -31,6 +31,7 @@ const num_100 = (num) => num**100;
 num_100(1000) //returns infinity.
 
 
+
 // ES8:
 // String padding : padStart(),padEnt()
 "Hello".padStart(10);
@@ -59,3 +60,44 @@ Object.entries(obj).forEach(item => console.log(item));
 // Returns all the items in the object.
 
 Object.entries(obj).map(user => user[1] + user[0].replace('username',''));
+
+// Solve the below problems:
+
+// #1) Line up the Turtle and the Rabbit at the start line:
+const startLine = '     ||<- Start line';
+let turtle = '🐢';
+let rabbit = '🐇';
+
+// it should look like this:
+'     ||<- Start line'
+'       🐢'
+'       🐇'
+
+
+// when you do:
+turtle.padStart(10);
+rabbit.padStart(10);
+console.log(startLine);
+console.log(turtle);
+console.log(rabbit);
+
+
+// #2) What happens when you run turtle.trim().padEnd(9, '=') on the turtle variable
+// Read about what the second parameter does in padEnd and padStart
+turtle = turtle.trim().padEnd(9, '=');
+// trim() function removes any trailling whitespaces
+// from the string, and the second parameter,
+// instead of whitespaces adds the character to the string.
+
+
+// #3) Get the below object to go from:
+let obj = {
+  my: 'name',
+  is: 'Rudolf',
+  the: 'raindeer'
+}
+// to this:
+'my name is Rudolf the raindeer'
+
+Object.entries(obj).map(item => `${item[0]} ${item[1]}`).join(' ')
+
