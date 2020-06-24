@@ -95,4 +95,4 @@ function checkBasket(basket, lookingFor) {
 
 // Synchronous Programming -Synchronous basically means that you can only execute one thing at a time.
 // Asynchronous means that you can execute multiple things at a time and you don't have to finish
-// executing the current thing in order to move on to next one
+// executing the current thing in order to move on to next one.
