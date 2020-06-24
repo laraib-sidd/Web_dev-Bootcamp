@@ -131,7 +131,7 @@ Object.fromEntries(user);
 
 // exception handling
 try{
-    4+5;
+    bob/0;
 }
 catch{
     console.log('You are so wrong');
