@@ -36,3 +36,26 @@ num_100(1000) //returns infinity.
 "Hello".padStart(10);
 // "     Hello"
 // It just adds 10 white-spaces at the start.
+
+const fun = (a,b,) => console.log(a);
+fun(2,)
+// syntax correction you can add comma at the end of parameters.
+
+var obj = {
+    username : 'Santa',
+    username1 : 'Rudolf',
+    username3 : 'mr.Grinch'
+}
+// old way
+Object.keys(obj).forEach((key,index) =>{
+    console.log(key,obj[key],index);
+})
+
+// new way
+Object.values(obj).forEach(value => console.log(value));
+// reutrns all the values of the object
+
+Object.entries(obj).forEach(item => console.log(item));
+// Returns all the items in the object.
+
+Object.entries(obj).map(user => user[1] + user[0].replace('username',''));
