@@ -89,3 +89,10 @@ function checkBasket(basket, lookingFor) {
 // Memeory heap - It allocates the memory for the variables that are declared.
 // Call Stack - It stores all the commands that are need to be executed.
 
+// Javascript is a single threaded language that can be non-blocking?
+// Single threaded means it has only one call stack, and it can run only
+// one thread at a time.
+
+// Synchronous Programming -Synchronous basically means that you can only execute one thing at a time.
+// Asynchronous means that you can execute multiple things at a time and you don't have to finish
+// executing the current thing in order to move on to next one
