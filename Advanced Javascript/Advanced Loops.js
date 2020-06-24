@@ -21,6 +21,7 @@ for (item of basket){
 
 // 4 for in
 // It allows us to see object properties.
+// We are doing here enumerating.
 // It works with objects;
 for (item in bas){
     console.log(item);
