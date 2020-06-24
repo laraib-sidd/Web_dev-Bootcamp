@@ -103,7 +103,7 @@ Object.entries(obj).map(item => `${item[0]} ${item[1]}`).join(' ');
 // other way
 Object.entries(obj).map(item => item.join(' ')).join(' ');
 
-// ES9
+// ES10
 const arr = [1,[2,3],4,5]
 arr.flat();
 // flat - this function makes a multidimensional array single
@@ -111,3 +111,13 @@ arr.flat();
 // flat takes a parameter to define till how much depth to
 // flaten.
 // It also removes the empty entries in the array.
+// flatmap()
+
+const jurassic_park = arr.flatmap(num => num + 'a')
+// flatmap - It flatens the array and also applies a map
+// function to it.
+
+// trimStart() - it removes the empty white spaces from the
+// beginning of the string.
+// trimEnd() - it removes the empty white spaces from the
+// ending of the string.
