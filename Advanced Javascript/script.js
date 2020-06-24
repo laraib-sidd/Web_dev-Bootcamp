@@ -157,14 +157,3 @@ let supeClone = JSON.parse(JSON.stringify(obj));
 
 1 == "1";
 
-// ES7 updates:
-// inclues method : Its a method that looks for a sbustring in
-// a string and array.
-"Hello".includes('H')//returns true.
-
-const pets = ['cat','dohg','bat'];
-pets.includes('cat') //returns true.
-
-// exponenstial
-const square = (x) => x**2;
-const cube = (x) => x**3;
