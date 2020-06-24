@@ -150,3 +150,17 @@ let clone2 = {...obj};
 
 // deep cloning: cloning all the levels objects.
 let supeClone = JSON.parse(JSON.stringify(obj));
+
+// Type conercion means type casting,
+// When comparing two data types with same value
+// one of them is converted to other to give return true value.
+
+1 == "1";
+
+// ES7 updates:
+// inclues method : Its a method that looks for a sbustring in
+// a string and array.
+"Hello".includes('H')//returns true.
+
+const pets = ['cat','dohg','bat'];
+pets.includes('cat') //returns true.
