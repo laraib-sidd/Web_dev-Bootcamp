@@ -139,7 +139,14 @@ let d = [].concat(c);
 
 // Trying the same thing with objects;
 // passing object by value.
-let obj1 = {a:'a',b:'b',c:'c'};
-let clone1 = Object.assign({},obj1);
+let obj = {a:'a',b:'b',c:'c'};
+let clone1 = Object.assign({},obj);
 // Another method
-let clone2 = {...obj1};
+let clone2 = {...obj};
+
+// Shallow clone
+// In this parent object is cloned but if there is another object,
+// inside it than the second object is passed by refrence.
+
+// deep cloning: cloning all the levels objects.
+let supeClone = JSON.parse(JSON.stringify(obj));
