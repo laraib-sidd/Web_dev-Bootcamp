@@ -129,4 +129,15 @@ let obj2 = obj1;
 
 // In this the the reference to 'obj1' has been passed to
 // 'obj2'. So when ever there are changes made to obj1.
-// 'obj2' will also reflect those changes.
+// 'obj2' will also reflect those changes and vice-versa.
+
+let c = [1,2,3,4];
+let d = [].concat(c);
+// Althought array has also the property of being passed by refrence.
+// But with this concationation method we only pass the value
+// not the refrence.
+
+// Trying the same thing with objects;
+// passing object by value.
+let obj1 = {a:'a',b:'b',c:'c'};
+let obj2 = Object.assign({},obj1);
