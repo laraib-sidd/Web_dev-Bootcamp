@@ -140,4 +140,6 @@ let d = [].concat(c);
 // Trying the same thing with objects;
 // passing object by value.
 let obj1 = {a:'a',b:'b',c:'c'};
-let obj2 = Object.assign({},obj1);
+let clone1 = Object.assign({},obj1);
+// Another method
+let clone2 = {...obj1};
