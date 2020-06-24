@@ -85,3 +85,4 @@ function checkBasket(basket, lookingFor) {
     }
     return 'The item was not found in the basket.';
 }
+// How does javascript works?
