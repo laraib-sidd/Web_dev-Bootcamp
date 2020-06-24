@@ -26,3 +26,62 @@ for (item of basket){
 for (item in bas){
     console.log(item);
 }
+
+// Exercise
+
+// Question #1:
+// create a function called biggestNumberInArray() that takes
+// an array as a parameter and returns the biggest number.
+// biggestNumberInArray([-1,0,3,100, 99, 2, 99]) should return 100;
+// Use at least 3 different types of javascript loops to write this:
+const array = [-1,0,3,100, 99, 2, 99] // should return 100
+const array2 = ['a', 3, 4, 2] // should return 4
+const array3 = [] // should return 0
+
+function biggestNumberInArray(arr) {
+    let max = 0;
+    for (let i=0;i<arr.length;i++){
+        if (arr[i] > max){
+            max = arr[i]
+        }
+    }
+    return max;
+}
+
+function biggestNumberInArray2(arr) {
+    let max = 0;
+    arr.forEach(num =>{
+        if (num > max){
+            max = num;
+        }
+    })
+    return max;
+}
+
+function biggestNumberInArray3(arr) {
+    let max = 0;
+    for (item of arr){
+        if (num > max){
+            max = num;
+        }
+    }
+    return max;
+}
+
+
+// Question #2:
+// Write a function checkBasket() that lets you know if the item is in the basket or not
+amazonBasket = {
+  glasses: 1,
+  books: 2,
+  floss: 100
+}
+
+function checkBasket(basket, lookingFor) {
+    for (item in basket){
+        if (item === lookingFor){
+            return `${lookingFor} is not in the basekt.`;
+        }
+    }
+    return 'The item was not found in the basket.';
+}
