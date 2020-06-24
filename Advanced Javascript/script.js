@@ -115,3 +115,18 @@ const sum = (num) => num + 1;
 compose(sum,sum)(5);
 
 // Avoiding side Effects, and functional purity.
+
+// Pass by value. Only the value is copied.
+var a = 5;
+var b = a;
+a++;
+// In this only the value is copied, they do not have any relation
+// With each other.Only 'a' will increment, 'b' will remain the same.
+
+// Pass by refrence.
+let obj1 = {name: "yao", password : "123"};
+let obj2 = obj1;
+
+// In this the the reference to 'obj1' has been passed to
+// 'obj2'. So when ever there are changes made to obj1.
+// 'obj2' will also reflect those changes.
