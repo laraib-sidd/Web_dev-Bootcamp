@@ -5,7 +5,7 @@ import  SearchBox from './SearchBox'
 
 const App = () => {
     return(
-        <div>
+        <div className="tc">
         <h1>My RobotFriends</h1>
         <SearchBox />
         <CardList robots = {robots}/>
