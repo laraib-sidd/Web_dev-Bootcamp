@@ -25,8 +25,13 @@ class App extends Component {
     {
     const filter_robots =
     this.state.robots.filter(robot =>{
-        return robot.name.toLowerCase().includes(this.state.searchfield.toLowerCase())
+        return robot.name.toLowerCase()
+        .includes(this.state.searchfield.toLowerCase())
     })
+    if (this.state.robots.length === 0){
+        <h1 className="tc">Loading</h1>
+    }
+    else{
     return(
         <div className="tc">
         <h1 className=''>My RobotFriends</h1>
@@ -34,6 +39,7 @@ class App extends Component {
         <CardList robots = {filter_robots}/>
         </div>
         );
+        }
     }
 }
 
