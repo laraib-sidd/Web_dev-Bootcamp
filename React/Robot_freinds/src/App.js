@@ -15,7 +15,7 @@ class App extends Component {
         <SearchBox />
         <CardList robots = {robots}/>
         </div>
-    )
+        );
     }
 }
 
