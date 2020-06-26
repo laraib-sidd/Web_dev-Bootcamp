@@ -8,7 +8,8 @@ const state = {
     Searchfield: ''
 }
 class App extends Component {
-    render(){
+    render()
+    {
     return(
         <div className="tc">
         <h1>My RobotFriends</h1>
