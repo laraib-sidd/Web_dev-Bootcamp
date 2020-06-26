@@ -29,7 +29,7 @@ class App extends Component {
         .includes(this.state.searchfield.toLowerCase())
     })
     if (this.state.robots.length === 0){
-        <h1 className="tc">Loading</h1>
+        return <h1 className="tc">Loading</h1>
     }
     else{
     return(
