@@ -77,7 +77,7 @@ const getData = async function(){
     }
 }
 
-// ---------------Exerise---------------
+// ---------------More Examples---------------
 restParam(1, 2, 3, 4, 5);
 
 function restParam(p1, p2, ...p3) {
