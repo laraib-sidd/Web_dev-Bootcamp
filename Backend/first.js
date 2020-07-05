@@ -15,4 +15,5 @@ console.log(__dirname);
 console.log(script.large)
 
 // Built in modules
-console.log(c);
+// console.log(c);
+console.log('fd')
